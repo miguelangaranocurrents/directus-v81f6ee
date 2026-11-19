@@ -1,0 +1,895 @@
+e2e	Run e2e tests	﻿2026-11-10T16:31:53.7209828Z ##[group]Run npx playwright test
+e2e	Run e2e tests	2026-11-10T16:31:53.7210186Z [36;1mnpx playwright test[0m
+e2e	Run e2e tests	2026-11-10T16:31:53.7232218Z shell: /usr/bin/bash -e {0}
+e2e	Run e2e tests	2026-11-10T16:31:53.7232486Z env:
+e2e	Run e2e tests	2026-11-10T16:31:53.7232674Z   DB_CLIENT: sqlite3
+e2e	Run e2e tests	2026-11-10T16:31:53.7233053Z   DB_FILENAME: /home/runner/work/directus-7df48e/directus-7df48e/e2e-data/database.db
+e2e	Run e2e tests	2026-11-10T16:31:53.7233655Z   STORAGE_LOCAL_ROOT: /home/runner/work/directus-7df48e/directus-7df48e/e2e-data/uploads
+e2e	Run e2e tests	2026-11-10T16:31:53.7234265Z   EXTENSIONS_PATH: /home/runner/work/directus-7df48e/directus-7df48e/e2e-data/extensions
+e2e	Run e2e tests	2026-11-10T16:31:53.7234679Z   KEY: e2e-key
+e2e	Run e2e tests	2026-11-10T16:31:53.7234934Z   SECRET: e2e-secret-that-is-long-enough-for-hs256
+e2e	Run e2e tests	2026-11-10T16:31:53.7235250Z   ADMIN_EMAIL: admin@example.com
+e2e	Run e2e tests	2026-11-10T16:31:53.7235493Z   ADMIN_PASSWORD: d1r3ctu5
+e2e	Run e2e tests	2026-11-10T16:31:53.7235723Z   ADMIN_TOKEN: e2e-admin-token
+e2e	Run e2e tests	2026-11-10T16:31:53.7235966Z   PROJECT_OWNER: admin@example.com
+e2e	Run e2e tests	2026-11-10T16:31:53.7236238Z   PUBLIC_URL: http://localhost:8055
+e2e	Run e2e tests	2026-11-10T16:31:53.7236533Z   TELEMETRY: false
+e2e	Run e2e tests	2026-11-10T16:31:53.7236738Z   RATE_LIMITER_ENABLED: false
+e2e	Run e2e tests	2026-11-10T16:31:53.7236963Z   LOG_LEVEL: info
+e2e	Run e2e tests	2026-11-10T16:31:53.7237206Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+e2e	Run e2e tests	2026-11-10T16:31:53.7237506Z   CI: true
+e2e	Run e2e tests	2026-11-10T16:31:53.7237685Z ##[endgroup]
+e2e	Run e2e tests	2026-11-10T16:31:55.1866955Z 
+e2e	Run e2e tests	2026-11-10T16:31:55.1867725Z Running 25 tests using 2 workers
+e2e	Run e2e tests	2026-11-10T16:31:55.1868176Z 
+e2e	Run e2e tests	2026-11-10T16:32:01.6502345Z   ✓   2 [chromium] › tests/content/datetime.spec.ts:12:2 › Datetime interface › picks a date from the calendar (4.7s)
+e2e	Run e2e tests	2026-11-10T16:32:12.6973094Z   ✓   1 [chromium] › tests/auth/login.spec.ts:5:2 › Login › signs in with email and password (16.4s)
+e2e	Run e2e tests	2026-11-10T16:32:23.4912880Z   ✘   3 [chromium] › tests/content/datetime.spec.ts:21:2 › Datetime interface › shows the weekdays in the language of the user (21.4s)
+e2e	Run e2e tests	2026-11-10T16:32:26.2831590Z   ✓   4 [chromium] › tests/auth/login.spec.ts:15:2 › Login › rejects a wrong password (13.2s)
+e2e	Run e2e tests	2026-11-10T16:32:30.9485437Z   ✓   6 [chromium] › tests/auth/login.spec.ts:25:2 › Login › redirects to the login page when signed out (4.5s)
+e2e	Run e2e tests	2026-11-10T16:32:36.7669563Z   ✓   7 [chromium] › tests/content/filters.spec.ts:33:2 › Search filters › narrows the items with a filter (5.2s)
+e2e	Run e2e tests	2026-11-10T16:32:44.9907787Z   ✘   5 [chromium] › tests/content/datetime.spec.ts:21:2 › Datetime interface › shows the weekdays in the language of the user (retry #1) (19.5s)
+e2e	Run e2e tests	2026-11-10T16:33:05.0827064Z   ✘   9 [chromium] › tests/content/datetime.spec.ts:21:2 › Datetime interface › shows the weekdays in the language of the user (retry #2) (18.8s)
+e2e	Run e2e tests	2026-11-10T16:33:09.2542331Z   ✓  10 [chromium] › tests/content/items.spec.ts:18:2 › Items › lists the items of a collection (2.7s)
+e2e	Run e2e tests	2026-11-10T16:33:12.2037418Z   ✓  11 [chromium] › tests/content/items.spec.ts:25:2 › Items › creates an item (2.8s)
+e2e	Run e2e tests	2026-11-10T16:33:15.3598392Z   ✓  12 [chromium] › tests/content/items.spec.ts:35:2 › Items › edits an item (3.0s)
+e2e	Run e2e tests	2026-11-10T16:33:18.4195524Z   ✓  13 [chromium] › tests/content/items.spec.ts:50:2 › Items › deletes an item (2.9s)
+e2e	Run e2e tests	2026-11-10T16:33:21.3156497Z   ✓  14 [chromium] › tests/content/items.spec.ts:61:2 › Items › searches items (2.8s)
+e2e	Run e2e tests	2026-11-10T16:33:24.3812778Z   ✓  15 [chromium] › tests/content/markdown-editor.spec.ts:14:2 › Markdown editor › renders the markdown in the preview (2.9s)
+e2e	Run e2e tests	2026-11-10T16:33:27.4459132Z   ✘  16 [chromium] › tests/content/markdown-editor.spec.ts:25:2 › Markdown editor › highlights the selected view in the Edit / Preview toggle (2.9s)
+e2e	Run e2e tests	2026-11-10T16:33:31.9948542Z   ✘  17 [chromium] › tests/content/markdown-editor.spec.ts:25:2 › Markdown editor › highlights the selected view in the Edit / Preview toggle (retry #1) (3.3s)
+e2e	Run e2e tests	2026-11-10T16:33:36.3811164Z   ✘  18 [chromium] › tests/content/markdown-editor.spec.ts:25:2 › Markdown editor › highlights the selected view in the Edit / Preview toggle (retry #2) (3.1s)
+e2e	Run e2e tests	2026-11-10T16:33:37.6846577Z   ✘   8 [chromium] › tests/content/filters.spec.ts:42:2 › Search filters › removes a filter with a long value (1.0m)
+e2e	Run e2e tests	2026-11-10T16:33:41.5762563Z   ✓  19 [chromium] › tests/files/library.spec.ts:25:2 › File library › uploads a file with the upload button (4.0s)
+e2e	Run e2e tests	2026-11-10T16:33:45.0859582Z   ✓  21 [chromium] › tests/files/library.spec.ts:35:2 › File library › uploads a dropped text file (3.4s)
+e2e	Run e2e tests	2026-11-10T16:34:03.5131503Z   ✘  22 [chromium] › tests/files/library.spec.ts:41:2 › File library › uploads a dropped file the browser has no type for (18.3s)
+e2e	Run e2e tests	2026-11-10T16:34:23.2215556Z   ✘  23 [chromium] › tests/files/library.spec.ts:41:2 › File library › uploads a dropped file the browser has no type for (retry #1) (18.7s)
+e2e	Run e2e tests	2026-11-10T16:34:39.9856178Z   ✘  20 [chromium] › tests/content/filters.spec.ts:42:2 › Search filters › removes a filter with a long value (retry #1) (1.0m)
+e2e	Run e2e tests	2026-11-10T16:34:43.4191847Z   ✘  24 [chromium] › tests/files/library.spec.ts:41:2 › File library › uploads a dropped file the browser has no type for (retry #2) (19.1s)
+e2e	Run e2e tests	2026-11-10T16:34:48.7930132Z   ✓  26 [chromium] › tests/files/library.spec.ts:47:2 › File library › creates a folder (4.0s)
+e2e	Run e2e tests	2026-11-10T16:34:53.1445523Z   ✓  27 [chromium] › tests/settings/data-model.spec.ts:5:2 › Data model › creates a collection (4.2s)
+e2e	Run e2e tests	2026-11-10T16:34:57.3770841Z   ✓  28 [chromium] › tests/settings/data-model.spec.ts:19:2 › Data model › adds a text input field (4.1s)
+e2e	Run e2e tests	2026-11-10T16:35:17.2691488Z   ✘  29 [chromium] › tests/settings/data-model.spec.ts:34:2 › Data model › keeps the m2m configuration open when files are chosen as related collection (19.7s)
+e2e	Run e2e tests	2026-11-10T16:35:38.3695352Z   ✘  30 [chromium] › tests/settings/data-model.spec.ts:34:2 › Data model › keeps the m2m configuration open when files are chosen as related collection (retry #1) (20.1s)
+e2e	Run e2e tests	2026-11-10T16:35:42.7694825Z   ✘  25 [chromium] › tests/content/filters.spec.ts:42:2 › Search filters › removes a filter with a long value (retry #2) (1.0m)
+e2e	Run e2e tests	2026-11-10T16:35:48.4369839Z   ✓  32 [chromium] › tests/settings/project.spec.ts:11:2 › Project settings › renames the project (4.4s)
+e2e	Run e2e tests	2026-11-10T16:35:51.1531461Z   ✓  33 [chromium] › tests/users/users.spec.ts:5:2 › User directory › lists the admin user (2.6s)
+e2e	Run e2e tests	2026-11-10T16:35:54.1668668Z   ✓  34 [chromium] › tests/users/users.spec.ts:11:2 › User directory › updates the first name of the current user (2.9s)
+e2e	Run e2e tests	2026-11-10T16:35:59.9147378Z   ✘  31 [chromium] › tests/settings/data-model.spec.ts:34:2 › Data model › keeps the m2m configuration open when files are chosen as related collection (retry #2) (20.5s)
+e2e	Run e2e tests	2026-11-10T16:36:20.2629482Z   ✘  35 [chromium] › tests/settings/data-model.spec.ts:52:2 › Data model › lists the sub-fields of a repeater created through the API (19.4s)
+e2e	Run e2e tests	2026-11-10T16:36:40.3781996Z   ✘  36 [chromium] › tests/settings/data-model.spec.ts:52:2 › Data model › lists the sub-fields of a repeater created through the API (retry #1) (19.2s)
+e2e	Run e2e tests	2026-11-10T16:37:00.6013695Z   ✘  37 [chromium] › tests/settings/data-model.spec.ts:52:2 › Data model › lists the sub-fields of a repeater created through the API (retry #2) (19.3s)
+e2e	Run e2e tests	2026-11-10T16:37:00.6207159Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6213664Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6229580Z   1) [chromium] › tests/content/datetime.spec.ts:21:2 › Datetime interface › shows the weekdays in the language of the user 
+e2e	Run e2e tests	2026-11-10T16:37:00.6231333Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6232190Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m failed
+e2e	Run e2e tests	2026-11-10T16:37:00.6232907Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6233176Z     Locator: locator('.calendar-head-cell')
+e2e	Run e2e tests	2026-11-10T16:37:00.6233769Z     Timeout: 15000ms
+e2e	Run e2e tests	2026-11-10T16:37:00.6234305Z     [32m- Expected  - 7[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6234829Z     [31m+ Received  + 7[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6235125Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6235357Z     [2m  Array [[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6235819Z     [32m-   "Mo",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6236295Z     [32m-   "Di",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6236748Z     [32m-   "Mi",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6237200Z     [32m-   "Do",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6237645Z     [32m-   "Fr",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6238076Z     [32m-   "Sa",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6238914Z     [32m-   "So",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6239392Z     [31m+   "Sun",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6239882Z     [31m+   "Mon",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6240616Z     [31m+   "Tue",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6241115Z     [31m+   "Wed",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6241573Z     [31m+   "Thu",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6242020Z     [31m+   "Fri",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6242479Z     [31m+   "Sat",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6242919Z     [2m  ][22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6243129Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6243288Z     Call log:
+e2e	Run e2e tests	2026-11-10T16:37:00.6243901Z     [2m  - Expect "toHaveText" with timeout 15000ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6244722Z     [2m  - waiting for locator('.calendar-head-cell')[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6245509Z     [2m    19 × locator resolved to 7 elements[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6245904Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6245915Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6246310Z       32 | 		await page.getByRole('button', { name: 'today' }).click();
+e2e	Run e2e tests	2026-11-10T16:37:00.6246933Z       33 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6247843Z     > 34 | 		await expect(page.locator('.calendar-head-cell')).toHaveText(['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So']);
+e2e	Run e2e tests	2026-11-10T16:37:00.6248860Z          | 		                                                  ^
+e2e	Run e2e tests	2026-11-10T16:37:00.6249368Z       35 | 	});
+e2e	Run e2e tests	2026-11-10T16:37:00.6249710Z       36 | });
+e2e	Run e2e tests	2026-11-10T16:37:00.6250034Z       37 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6253055Z         at /home/runner/work/directus-7df48e/directus-7df48e/e2e/tests/content/datetime.spec.ts:34:53
+e2e	Run e2e tests	2026-11-10T16:37:00.6254062Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6254871Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6256244Z     test-results/content-datetime-Datetime--370f7-in-the-language-of-the-user-chromium/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T16:37:00.6257751Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6258268Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6259001Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6260274Z     test-results/content-datetime-Datetime--370f7-in-the-language-of-the-user-chromium/video.webm
+e2e	Run e2e tests	2026-11-10T16:37:00.6261992Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6262487Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6263363Z     Error Context: test-results/content-datetime-Datetime--370f7-in-the-language-of-the-user-chromium/error-context.md
+e2e	Run e2e tests	2026-11-10T16:37:00.6264288Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6265100Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6266390Z     test-results/content-datetime-Datetime--370f7-in-the-language-of-the-user-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6267288Z     Usage:
+e2e	Run e2e tests	2026-11-10T16:37:00.6267485Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6268359Z         npx playwright show-trace test-results/content-datetime-Datetime--370f7-in-the-language-of-the-user-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6269277Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6270225Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6271226Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6271906Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6272429Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6273188Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m failed
+e2e	Run e2e tests	2026-11-10T16:37:00.6273851Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6274098Z     Locator: locator('.calendar-head-cell')
+e2e	Run e2e tests	2026-11-10T16:37:00.6274588Z     Timeout: 15000ms
+e2e	Run e2e tests	2026-11-10T16:37:00.6275044Z     [32m- Expected  - 7[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6275527Z     [31m+ Received  + 7[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6275798Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6276003Z     [2m  Array [[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6276426Z     [32m-   "Mo",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6276844Z     [32m-   "Di",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6277246Z     [32m-   "Mi",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6277660Z     [32m-   "Do",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6278094Z     [32m-   "Fr",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6278515Z     [32m-   "Sa",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6278927Z     [32m-   "So",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6279341Z     [31m+   "Sun",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6279783Z     [31m+   "Mon",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6280213Z     [31m+   "Tue",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6280922Z     [31m+   "Wed",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6281357Z     [31m+   "Thu",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6282032Z     [31m+   "Fri",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6282449Z     [31m+   "Sat",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6282847Z     [2m  ][22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6283050Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6283184Z     Call log:
+e2e	Run e2e tests	2026-11-10T16:37:00.6283743Z     [2m  - Expect "toHaveText" with timeout 15000ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6284537Z     [2m  - waiting for locator('.calendar-head-cell')[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6285276Z     [2m    19 × locator resolved to 7 elements[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6285632Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6285642Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6286003Z       32 | 		await page.getByRole('button', { name: 'today' }).click();
+e2e	Run e2e tests	2026-11-10T16:37:00.6286587Z       33 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6287417Z     > 34 | 		await expect(page.locator('.calendar-head-cell')).toHaveText(['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So']);
+e2e	Run e2e tests	2026-11-10T16:37:00.6288406Z          | 		                                                  ^
+e2e	Run e2e tests	2026-11-10T16:37:00.6288893Z       35 | 	});
+e2e	Run e2e tests	2026-11-10T16:37:00.6289220Z       36 | });
+e2e	Run e2e tests	2026-11-10T16:37:00.6289534Z       37 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6290585Z         at /home/runner/work/directus-7df48e/directus-7df48e/e2e/tests/content/datetime.spec.ts:34:53
+e2e	Run e2e tests	2026-11-10T16:37:00.6291294Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6292085Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6293512Z     test-results/content-datetime-Datetime--370f7-in-the-language-of-the-user-chromium-retry1/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T16:37:00.6295027Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6295550Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6296241Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6297517Z     test-results/content-datetime-Datetime--370f7-in-the-language-of-the-user-chromium-retry1/video.webm
+e2e	Run e2e tests	2026-11-10T16:37:00.6298955Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6299480Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6300666Z     Error Context: test-results/content-datetime-Datetime--370f7-in-the-language-of-the-user-chromium-retry1/error-context.md
+e2e	Run e2e tests	2026-11-10T16:37:00.6301663Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6302432Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6303755Z     test-results/content-datetime-Datetime--370f7-in-the-language-of-the-user-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6304715Z     Usage:
+e2e	Run e2e tests	2026-11-10T16:37:00.6304907Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6305853Z         npx playwright show-trace test-results/content-datetime-Datetime--370f7-in-the-language-of-the-user-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6307075Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6307752Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6308278Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6308932Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6309740Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6310774Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m failed
+e2e	Run e2e tests	2026-11-10T16:37:00.6311474Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6311724Z     Locator: locator('.calendar-head-cell')
+e2e	Run e2e tests	2026-11-10T16:37:00.6312223Z     Timeout: 15000ms
+e2e	Run e2e tests	2026-11-10T16:37:00.6312687Z     [32m- Expected  - 7[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6313175Z     [31m+ Received  + 7[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6313438Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6313642Z     [2m  Array [[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6314056Z     [32m-   "Mo",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6314499Z     [32m-   "Di",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6314918Z     [32m-   "Mi",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6315329Z     [32m-   "Do",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6315735Z     [32m-   "Fr",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6316143Z     [32m-   "Sa",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6316550Z     [32m-   "So",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6316963Z     [31m+   "Sun",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6317387Z     [31m+   "Mon",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6317809Z     [31m+   "Tue",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6318249Z     [31m+   "Wed",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6318668Z     [31m+   "Thu",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6319080Z     [31m+   "Fri",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6319509Z     [31m+   "Sat",[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6319918Z     [2m  ][22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6320124Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6320268Z     Call log:
+e2e	Run e2e tests	2026-11-10T16:37:00.6321093Z     [2m  - Expect "toHaveText" with timeout 15000ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6321902Z     [2m  - waiting for locator('.calendar-head-cell')[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6322679Z     [2m    19 × locator resolved to 7 elements[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6322941Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6322949Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6323178Z       32 | 		await page.getByRole('button', { name: 'today' }).click();
+e2e	Run e2e tests	2026-11-10T16:37:00.6323545Z       33 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6324050Z     > 34 | 		await expect(page.locator('.calendar-head-cell')).toHaveText(['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So']);
+e2e	Run e2e tests	2026-11-10T16:37:00.6324622Z          | 		                                                  ^
+e2e	Run e2e tests	2026-11-10T16:37:00.6324924Z       35 | 	});
+e2e	Run e2e tests	2026-11-10T16:37:00.6325119Z       36 | });
+e2e	Run e2e tests	2026-11-10T16:37:00.6325312Z       37 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6325760Z         at /home/runner/work/directus-7df48e/directus-7df48e/e2e/tests/content/datetime.spec.ts:34:53
+e2e	Run e2e tests	2026-11-10T16:37:00.6326144Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6326556Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6327353Z     test-results/content-datetime-Datetime--370f7-in-the-language-of-the-user-chromium-retry2/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T16:37:00.6328395Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6328675Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6329055Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6329785Z     test-results/content-datetime-Datetime--370f7-in-the-language-of-the-user-chromium-retry2/video.webm
+e2e	Run e2e tests	2026-11-10T16:37:00.6330981Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6331282Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6331792Z     Error Context: test-results/content-datetime-Datetime--370f7-in-the-language-of-the-user-chromium-retry2/error-context.md
+e2e	Run e2e tests	2026-11-10T16:37:00.6332323Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6332719Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6333457Z     test-results/content-datetime-Datetime--370f7-in-the-language-of-the-user-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6334002Z     Usage:
+e2e	Run e2e tests	2026-11-10T16:37:00.6334111Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6334629Z         npx playwright show-trace test-results/content-datetime-Datetime--370f7-in-the-language-of-the-user-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6335178Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6335520Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6335800Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6336550Z   2) [chromium] › tests/content/filters.spec.ts:42:2 › Search filters › removes a filter with a long value 
+e2e	Run e2e tests	2026-11-10T16:37:00.6336945Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6337135Z     [31mTest timeout of 60000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6337336Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6337520Z     Error: locator.click: Test timeout of 60000ms exceeded.
+e2e	Run e2e tests	2026-11-10T16:37:00.6337841Z     Call log:
+e2e	Run e2e tests	2026-11-10T16:37:00.6338283Z     [2m  - waiting for getByRole('search').getByRole('button', { name: 'close' })[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6339370Z     [2m    - locator resolved to <button type="button" data-v-0706e71a="" data-v-452f8aa9="" class="v-icon small has-click" aria-describedby="app-tooltip-content">…</button>[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6340198Z     [2m  - attempting click action[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6340973Z     [2m    2 × waiting for element to be visible, enabled and stable[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6341475Z     [2m      - element is visible, enabled and stable[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6341883Z     [2m      - scrolling into view if needed[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6342253Z     [2m      - done scrolling[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6342812Z     [2m      - <div data-reka-popper-content-wrapper="">…</div> intercepts pointer events[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6343328Z     [2m    - retrying click action[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6343656Z     [2m    - waiting 20ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6344074Z     [2m    2 × waiting for element to be visible, enabled and stable[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6344547Z     [2m      - element is visible, enabled and stable[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6345109Z     [2m      - scrolling into view if needed[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6345459Z     [2m      - done scrolling[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6346000Z     [2m      - <div data-reka-popper-content-wrapper="">…</div> intercepts pointer events[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6346509Z     [2m    - retrying click action[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6346833Z     [2m      - waiting 100ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6347265Z     [2m    107 × waiting for element to be visible, enabled and stable[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6347762Z     [2m        - element is visible, enabled and stable[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6348182Z     [2m        - scrolling into view if needed[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6348538Z     [2m        - done scrolling[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6349080Z     [2m        - <div data-reka-popper-content-wrapper="">…</div> intercepts pointer events[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6349592Z     [2m      - retrying click action[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6349914Z     [2m        - waiting 500ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6350082Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6350100Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6350733Z       46 | 		await expect(page.getByRole('cell', { name: 'Write report' })).toHaveCount(0);
+e2e	Run e2e tests	2026-11-10T16:37:00.6351165Z       47 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6351478Z     > 48 | 		await search.getByRole('button', { name: 'close' }).click();
+e2e	Run e2e tests	2026-11-10T16:37:00.6351887Z          | 		                                                    ^
+e2e	Run e2e tests	2026-11-10T16:37:00.6352165Z       49 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6352639Z       50 | 		await expect(search.getByRole('listitem')).toHaveCount(0);
+e2e	Run e2e tests	2026-11-10T16:37:00.6353176Z       51 | 		await expect(page.getByRole('cell', { name: 'Write report' })).toBeVisible();
+e2e	Run e2e tests	2026-11-10T16:37:00.6353826Z         at /home/runner/work/directus-7df48e/directus-7df48e/e2e/tests/content/filters.spec.ts:48:55
+e2e	Run e2e tests	2026-11-10T16:37:00.6354205Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6354618Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6355361Z     test-results/content-filters-Search-fil-c77b7--a-filter-with-a-long-value-chromium/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T16:37:00.6356157Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6356433Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6356807Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6357494Z     test-results/content-filters-Search-fil-c77b7--a-filter-with-a-long-value-chromium/video.webm
+e2e	Run e2e tests	2026-11-10T16:37:00.6358259Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6358537Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6358996Z     Error Context: test-results/content-filters-Search-fil-c77b7--a-filter-with-a-long-value-chromium/error-context.md
+e2e	Run e2e tests	2026-11-10T16:37:00.6359487Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6359869Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6360880Z     test-results/content-filters-Search-fil-c77b7--a-filter-with-a-long-value-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6361559Z     Usage:
+e2e	Run e2e tests	2026-11-10T16:37:00.6361666Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6362149Z         npx playwright show-trace test-results/content-filters-Search-fil-c77b7--a-filter-with-a-long-value-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6362680Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6363045Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6363344Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6363684Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6363972Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6364159Z     [31mTest timeout of 60000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6364357Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6364557Z     Error: locator.click: Test timeout of 60000ms exceeded.
+e2e	Run e2e tests	2026-11-10T16:37:00.6364873Z     Call log:
+e2e	Run e2e tests	2026-11-10T16:37:00.6365311Z     [2m  - waiting for getByRole('search').getByRole('button', { name: 'close' })[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6366362Z     [2m    - locator resolved to <button type="button" data-v-0706e71a="" data-v-452f8aa9="" class="v-icon small has-click" aria-describedby="app-tooltip-content">…</button>[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6367160Z     [2m  - attempting click action[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6367606Z     [2m    2 × waiting for element to be visible, enabled and stable[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6368081Z     [2m      - element is visible, enabled and stable[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6368478Z     [2m      - scrolling into view if needed[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6368967Z     [2m      - done scrolling[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6369513Z     [2m      - <div data-reka-popper-content-wrapper="">…</div> intercepts pointer events[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6370032Z     [2m    - retrying click action[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6370675Z     [2m    - waiting 20ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6371164Z     [2m    2 × waiting for element to be visible, enabled and stable[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6371648Z     [2m      - element is visible, enabled and stable[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6372068Z     [2m      - scrolling into view if needed[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6372421Z     [2m      - done scrolling[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6372971Z     [2m      - <div data-reka-popper-content-wrapper="">…</div> intercepts pointer events[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6373481Z     [2m    - retrying click action[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6373809Z     [2m      - waiting 100ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6374247Z     [2m    105 × waiting for element to be visible, enabled and stable[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6374747Z     [2m        - element is visible, enabled and stable[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6375162Z     [2m        - scrolling into view if needed[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6375515Z     [2m        - done scrolling[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6376056Z     [2m        - <div data-reka-popper-content-wrapper="">…</div> intercepts pointer events[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6376573Z     [2m      - retrying click action[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6376906Z     [2m        - waiting 500ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6377336Z     [2m    - waiting for element to be visible, enabled and stable[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6377605Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6377612Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6377891Z       46 | 		await expect(page.getByRole('cell', { name: 'Write report' })).toHaveCount(0);
+e2e	Run e2e tests	2026-11-10T16:37:00.6378299Z       47 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6378610Z     > 48 | 		await search.getByRole('button', { name: 'close' }).click();
+e2e	Run e2e tests	2026-11-10T16:37:00.6379020Z          | 		                                                    ^
+e2e	Run e2e tests	2026-11-10T16:37:00.6379309Z       49 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6379614Z       50 | 		await expect(search.getByRole('listitem')).toHaveCount(0);
+e2e	Run e2e tests	2026-11-10T16:37:00.6380140Z       51 | 		await expect(page.getByRole('cell', { name: 'Write report' })).toBeVisible();
+e2e	Run e2e tests	2026-11-10T16:37:00.6381059Z         at /home/runner/work/directus-7df48e/directus-7df48e/e2e/tests/content/filters.spec.ts:48:55
+e2e	Run e2e tests	2026-11-10T16:37:00.6381438Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6381845Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6382789Z     test-results/content-filters-Search-fil-c77b7--a-filter-with-a-long-value-chromium-retry1/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T16:37:00.6383613Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6383893Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6384271Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6385000Z     test-results/content-filters-Search-fil-c77b7--a-filter-with-a-long-value-chromium-retry1/video.webm
+e2e	Run e2e tests	2026-11-10T16:37:00.6385780Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6386057Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6386546Z     Error Context: test-results/content-filters-Search-fil-c77b7--a-filter-with-a-long-value-chromium-retry1/error-context.md
+e2e	Run e2e tests	2026-11-10T16:37:00.6387077Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6387460Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6388205Z     test-results/content-filters-Search-fil-c77b7--a-filter-with-a-long-value-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6388730Z     Usage:
+e2e	Run e2e tests	2026-11-10T16:37:00.6388838Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6389346Z         npx playwright show-trace test-results/content-filters-Search-fil-c77b7--a-filter-with-a-long-value-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6389893Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6390517Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6390810Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6391171Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6391465Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6391648Z     [31mTest timeout of 60000ms exceeded.[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6391854Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6392040Z     Error: locator.click: Test timeout of 60000ms exceeded.
+e2e	Run e2e tests	2026-11-10T16:37:00.6392355Z     Call log:
+e2e	Run e2e tests	2026-11-10T16:37:00.6392787Z     [2m  - waiting for getByRole('search').getByRole('button', { name: 'close' })[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6393860Z     [2m    - locator resolved to <button type="button" data-v-0706e71a="" data-v-452f8aa9="" class="v-icon small has-click" aria-describedby="app-tooltip-content">…</button>[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6394640Z     [2m  - attempting click action[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6395090Z     [2m    2 × waiting for element to be visible, enabled and stable[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6395581Z     [2m      - element is visible, enabled and stable[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6395978Z     [2m      - scrolling into view if needed[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6396328Z     [2m      - done scrolling[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6396859Z     [2m      - <div data-reka-popper-content-wrapper="">…</div> intercepts pointer events[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6397373Z     [2m    - retrying click action[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6397690Z     [2m    - waiting 20ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6398101Z     [2m    2 × waiting for element to be visible, enabled and stable[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6398714Z     [2m      - element is visible, enabled and stable[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6399115Z     [2m      - scrolling into view if needed[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6399468Z     [2m      - done scrolling[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6399998Z     [2m      - <div data-reka-popper-content-wrapper="">…</div> intercepts pointer events[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6400664Z     [2m    - retrying click action[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6401010Z     [2m      - waiting 100ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6401469Z     [2m    107 × waiting for element to be visible, enabled and stable[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6401965Z     [2m        - element is visible, enabled and stable[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6402374Z     [2m        - scrolling into view if needed[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6402730Z     [2m        - done scrolling[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6403274Z     [2m        - <div data-reka-popper-content-wrapper="">…</div> intercepts pointer events[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6403801Z     [2m      - retrying click action[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6404132Z     [2m        - waiting 500ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6404303Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6404310Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6404587Z       46 | 		await expect(page.getByRole('cell', { name: 'Write report' })).toHaveCount(0);
+e2e	Run e2e tests	2026-11-10T16:37:00.6404991Z       47 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6405297Z     > 48 | 		await search.getByRole('button', { name: 'close' }).click();
+e2e	Run e2e tests	2026-11-10T16:37:00.6405936Z          | 		                                                    ^
+e2e	Run e2e tests	2026-11-10T16:37:00.6406232Z       49 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6406544Z       50 | 		await expect(search.getByRole('listitem')).toHaveCount(0);
+e2e	Run e2e tests	2026-11-10T16:37:00.6407074Z       51 | 		await expect(page.getByRole('cell', { name: 'Write report' })).toBeVisible();
+e2e	Run e2e tests	2026-11-10T16:37:00.6407721Z         at /home/runner/work/directus-7df48e/directus-7df48e/e2e/tests/content/filters.spec.ts:48:55
+e2e	Run e2e tests	2026-11-10T16:37:00.6408106Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6408497Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6409293Z     test-results/content-filters-Search-fil-c77b7--a-filter-with-a-long-value-chromium-retry2/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T16:37:00.6410164Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6410732Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6411133Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6411883Z     test-results/content-filters-Search-fil-c77b7--a-filter-with-a-long-value-chromium-retry2/video.webm
+e2e	Run e2e tests	2026-11-10T16:37:00.6412690Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6412967Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6413472Z     Error Context: test-results/content-filters-Search-fil-c77b7--a-filter-with-a-long-value-chromium-retry2/error-context.md
+e2e	Run e2e tests	2026-11-10T16:37:00.6414002Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6414386Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6415284Z     test-results/content-filters-Search-fil-c77b7--a-filter-with-a-long-value-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6415809Z     Usage:
+e2e	Run e2e tests	2026-11-10T16:37:00.6415912Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6416438Z         npx playwright show-trace test-results/content-filters-Search-fil-c77b7--a-filter-with-a-long-value-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6417001Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6417338Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6417624Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6418201Z   3) [chromium] › tests/content/markdown-editor.spec.ts:25:2 › Markdown editor › highlights the selected view in the Edit / Preview toggle 
+e2e	Run e2e tests	2026-11-10T16:37:00.6418741Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6419265Z     Error: [2mexpect([22m[31mreceived[39m[2m).[22mnot[2m.[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6419848Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6420067Z     Expected: not [32m"rgb(240, 244, 249)"[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6420272Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6420771Z       44 | 		const previewAfter = await settledBackground(preview);
+e2e	Run e2e tests	2026-11-10T16:37:00.6421225Z       45 | 		const editAfter = await settledBackground(edit);
+e2e	Run e2e tests	2026-11-10T16:37:00.6421616Z     > 46 | 		expect(previewAfter).not.toBe(editAfter);
+e2e	Run e2e tests	2026-11-10T16:37:00.6421939Z          | 		                         ^
+e2e	Run e2e tests	2026-11-10T16:37:00.6422427Z       47 | 		expect(previewAfter).toBe(selectedBefore);
+e2e	Run e2e tests	2026-11-10T16:37:00.6422720Z       48 | 	});
+e2e	Run e2e tests	2026-11-10T16:37:00.6422915Z       49 | });
+e2e	Run e2e tests	2026-11-10T16:37:00.6423394Z         at /home/runner/work/directus-7df48e/directus-7df48e/e2e/tests/content/markdown-editor.spec.ts:46:28
+e2e	Run e2e tests	2026-11-10T16:37:00.6423802Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6424217Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6424960Z     test-results/content-markdown-editor-Ma-ba243--in-the-Edit-Preview-toggle-chromium/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T16:37:00.6425750Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6426032Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6426408Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6427097Z     test-results/content-markdown-editor-Ma-ba243--in-the-Edit-Preview-toggle-chromium/video.webm
+e2e	Run e2e tests	2026-11-10T16:37:00.6427862Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6428140Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6428603Z     Error Context: test-results/content-markdown-editor-Ma-ba243--in-the-Edit-Preview-toggle-chromium/error-context.md
+e2e	Run e2e tests	2026-11-10T16:37:00.6429094Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6429477Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6430171Z     test-results/content-markdown-editor-Ma-ba243--in-the-Edit-Preview-toggle-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6431076Z     Usage:
+e2e	Run e2e tests	2026-11-10T16:37:00.6431189Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6431675Z         npx playwright show-trace test-results/content-markdown-editor-Ma-ba243--in-the-Edit-Preview-toggle-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6432192Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6432543Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6432828Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6433184Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6433473Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6433968Z     Error: [2mexpect([22m[31mreceived[39m[2m).[22mnot[2m.[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6434405Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6434593Z     Expected: not [32m"rgb(240, 244, 249)"[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6434791Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6435000Z       44 | 		const previewAfter = await settledBackground(preview);
+e2e	Run e2e tests	2026-11-10T16:37:00.6435438Z       45 | 		const editAfter = await settledBackground(edit);
+e2e	Run e2e tests	2026-11-10T16:37:00.6435820Z     > 46 | 		expect(previewAfter).not.toBe(editAfter);
+e2e	Run e2e tests	2026-11-10T16:37:00.6436150Z          | 		                         ^
+e2e	Run e2e tests	2026-11-10T16:37:00.6436473Z       47 | 		expect(previewAfter).toBe(selectedBefore);
+e2e	Run e2e tests	2026-11-10T16:37:00.6436764Z       48 | 	});
+e2e	Run e2e tests	2026-11-10T16:37:00.6436963Z       49 | });
+e2e	Run e2e tests	2026-11-10T16:37:00.6437442Z         at /home/runner/work/directus-7df48e/directus-7df48e/e2e/tests/content/markdown-editor.spec.ts:46:28
+e2e	Run e2e tests	2026-11-10T16:37:00.6437989Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6438384Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6439164Z     test-results/content-markdown-editor-Ma-ba243--in-the-Edit-Preview-toggle-chromium-retry1/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T16:37:00.6439980Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6440258Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6440958Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6441727Z     test-results/content-markdown-editor-Ma-ba243--in-the-Edit-Preview-toggle-chromium-retry1/video.webm
+e2e	Run e2e tests	2026-11-10T16:37:00.6442519Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6442789Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6443287Z     Error Context: test-results/content-markdown-editor-Ma-ba243--in-the-Edit-Preview-toggle-chromium-retry1/error-context.md
+e2e	Run e2e tests	2026-11-10T16:37:00.6443836Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6444216Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6444950Z     test-results/content-markdown-editor-Ma-ba243--in-the-Edit-Preview-toggle-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6445473Z     Usage:
+e2e	Run e2e tests	2026-11-10T16:37:00.6445576Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6446088Z         npx playwright show-trace test-results/content-markdown-editor-Ma-ba243--in-the-Edit-Preview-toggle-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6446803Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6447141Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6447417Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6447763Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6448039Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6448530Z     Error: [2mexpect([22m[31mreceived[39m[2m).[22mnot[2m.[22mtoBe[2m([22m[32mexpected[39m[2m) // Object.is equality[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6448976Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6449157Z     Expected: not [32m"rgb(240, 244, 249)"[39m
+e2e	Run e2e tests	2026-11-10T16:37:00.6449360Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6449555Z       44 | 		const previewAfter = await settledBackground(preview);
+e2e	Run e2e tests	2026-11-10T16:37:00.6449986Z       45 | 		const editAfter = await settledBackground(edit);
+e2e	Run e2e tests	2026-11-10T16:37:00.6450692Z     > 46 | 		expect(previewAfter).not.toBe(editAfter);
+e2e	Run e2e tests	2026-11-10T16:37:00.6451040Z          | 		                         ^
+e2e	Run e2e tests	2026-11-10T16:37:00.6451385Z       47 | 		expect(previewAfter).toBe(selectedBefore);
+e2e	Run e2e tests	2026-11-10T16:37:00.6451677Z       48 | 	});
+e2e	Run e2e tests	2026-11-10T16:37:00.6451872Z       49 | });
+e2e	Run e2e tests	2026-11-10T16:37:00.6452355Z         at /home/runner/work/directus-7df48e/directus-7df48e/e2e/tests/content/markdown-editor.spec.ts:46:28
+e2e	Run e2e tests	2026-11-10T16:37:00.6452764Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6453170Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6454272Z     test-results/content-markdown-editor-Ma-ba243--in-the-Edit-Preview-toggle-chromium-retry2/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T16:37:00.6455102Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6455375Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6455754Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6456475Z     test-results/content-markdown-editor-Ma-ba243--in-the-Edit-Preview-toggle-chromium-retry2/video.webm
+e2e	Run e2e tests	2026-11-10T16:37:00.6457266Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6457545Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6458048Z     Error Context: test-results/content-markdown-editor-Ma-ba243--in-the-Edit-Preview-toggle-chromium-retry2/error-context.md
+e2e	Run e2e tests	2026-11-10T16:37:00.6458573Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6458956Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6459716Z     test-results/content-markdown-editor-Ma-ba243--in-the-Edit-Preview-toggle-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6460241Z     Usage:
+e2e	Run e2e tests	2026-11-10T16:37:00.6460510Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6461468Z         npx playwright show-trace test-results/content-markdown-editor-Ma-ba243--in-the-Edit-Preview-toggle-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6462394Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6463081Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6463756Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6464542Z   4) [chromium] › tests/files/library.spec.ts:41:2 › File library › uploads a dropped file the browser has no type for 
+e2e	Run e2e tests	2026-11-10T16:37:00.6465227Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6465808Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+e2e	Run e2e tests	2026-11-10T16:37:00.6466327Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6466664Z     Locator: getByText('Kitchen Cabinet', { exact: true }).first()
+e2e	Run e2e tests	2026-11-10T16:37:00.6467235Z     Expected: visible
+e2e	Run e2e tests	2026-11-10T16:37:00.6467579Z     Timeout: 15000ms
+e2e	Run e2e tests	2026-11-10T16:37:00.6467964Z     Error: element(s) not found
+e2e	Run e2e tests	2026-11-10T16:37:00.6468216Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6468340Z     Call log:
+e2e	Run e2e tests	2026-11-10T16:37:00.6468874Z     [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6469742Z     [2m  - waiting for getByText('Kitchen Cabinet', { exact: true }).first()[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6470245Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6470254Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6470803Z       42 | 		await dropFile(page, 'kitchen-cabinet.rfa', '');
+e2e	Run e2e tests	2026-11-10T16:37:00.6471322Z       43 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6472010Z     > 44 | 		await expect(page.getByText('Kitchen Cabinet', { exact: true }).first()).toBeVisible();
+e2e	Run e2e tests	2026-11-10T16:37:00.6472884Z          | 		                                                                         ^
+e2e	Run e2e tests	2026-11-10T16:37:00.6473380Z       45 | 	});
+e2e	Run e2e tests	2026-11-10T16:37:00.6473675Z       46 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6474099Z       47 | 	test('creates a folder', async ({ page }) => {
+e2e	Run e2e tests	2026-11-10T16:37:00.6475262Z         at /home/runner/work/directus-7df48e/directus-7df48e/e2e/tests/files/library.spec.ts:44:76
+e2e	Run e2e tests	2026-11-10T16:37:00.6475862Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6476539Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6477753Z     test-results/files-library-File-library-eb246-the-browser-has-no-type-for-chromium/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T16:37:00.6479093Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6479570Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6480197Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6481577Z     test-results/files-library-File-library-eb246-the-browser-has-no-type-for-chromium/video.webm
+e2e	Run e2e tests	2026-11-10T16:37:00.6482860Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6483355Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6484117Z     Error Context: test-results/files-library-File-library-eb246-the-browser-has-no-type-for-chromium/error-context.md
+e2e	Run e2e tests	2026-11-10T16:37:00.6484947Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6485606Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6486781Z     test-results/files-library-File-library-eb246-the-browser-has-no-type-for-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6487605Z     Usage:
+e2e	Run e2e tests	2026-11-10T16:37:00.6487783Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6488602Z         npx playwright show-trace test-results/files-library-File-library-eb246-the-browser-has-no-type-for-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6489686Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6490497Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6490983Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6491606Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6492130Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6492707Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+e2e	Run e2e tests	2026-11-10T16:37:00.6493252Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6493587Z     Locator: getByText('Kitchen Cabinet', { exact: true }).first()
+e2e	Run e2e tests	2026-11-10T16:37:00.6494161Z     Expected: visible
+e2e	Run e2e tests	2026-11-10T16:37:00.6494517Z     Timeout: 15000ms
+e2e	Run e2e tests	2026-11-10T16:37:00.6494904Z     Error: element(s) not found
+e2e	Run e2e tests	2026-11-10T16:37:00.6495159Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6495287Z     Call log:
+e2e	Run e2e tests	2026-11-10T16:37:00.6495831Z     [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6496727Z     [2m  - waiting for getByText('Kitchen Cabinet', { exact: true }).first()[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6497249Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6497259Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6497573Z       42 | 		await dropFile(page, 'kitchen-cabinet.rfa', '');
+e2e	Run e2e tests	2026-11-10T16:37:00.6498103Z       43 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6498784Z     > 44 | 		await expect(page.getByText('Kitchen Cabinet', { exact: true }).first()).toBeVisible();
+e2e	Run e2e tests	2026-11-10T16:37:00.6499865Z          | 		                                                                         ^
+e2e	Run e2e tests	2026-11-10T16:37:00.6500590Z       45 | 	});
+e2e	Run e2e tests	2026-11-10T16:37:00.6500909Z       46 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6501345Z       47 | 	test('creates a folder', async ({ page }) => {
+e2e	Run e2e tests	2026-11-10T16:37:00.6502237Z         at /home/runner/work/directus-7df48e/directus-7df48e/e2e/tests/files/library.spec.ts:44:76
+e2e	Run e2e tests	2026-11-10T16:37:00.6502853Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6503557Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6504923Z     test-results/files-library-File-library-eb246-the-browser-has-no-type-for-chromium-retry1/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T16:37:00.6506339Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6506807Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6507936Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6509194Z     test-results/files-library-File-library-eb246-the-browser-has-no-type-for-chromium-retry1/video.webm
+e2e	Run e2e tests	2026-11-10T16:37:00.6510865Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6511330Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6512182Z     Error Context: test-results/files-library-File-library-eb246-the-browser-has-no-type-for-chromium-retry1/error-context.md
+e2e	Run e2e tests	2026-11-10T16:37:00.6513070Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6513738Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6515205Z     test-results/files-library-File-library-eb246-the-browser-has-no-type-for-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6516382Z     Usage:
+e2e	Run e2e tests	2026-11-10T16:37:00.6516556Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6517442Z         npx playwright show-trace test-results/files-library-File-library-eb246-the-browser-has-no-type-for-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6518392Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6518998Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6519485Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6520063Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6520743Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6521336Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+e2e	Run e2e tests	2026-11-10T16:37:00.6521870Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6522205Z     Locator: getByText('Kitchen Cabinet', { exact: true }).first()
+e2e	Run e2e tests	2026-11-10T16:37:00.6522755Z     Expected: visible
+e2e	Run e2e tests	2026-11-10T16:37:00.6523120Z     Timeout: 15000ms
+e2e	Run e2e tests	2026-11-10T16:37:00.6523508Z     Error: element(s) not found
+e2e	Run e2e tests	2026-11-10T16:37:00.6523755Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6523885Z     Call log:
+e2e	Run e2e tests	2026-11-10T16:37:00.6524413Z     [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6525267Z     [2m  - waiting for getByText('Kitchen Cabinet', { exact: true }).first()[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6525784Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6525793Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6526312Z       42 | 		await dropFile(page, 'kitchen-cabinet.rfa', '');
+e2e	Run e2e tests	2026-11-10T16:37:00.6526825Z       43 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6527534Z     > 44 | 		await expect(page.getByText('Kitchen Cabinet', { exact: true }).first()).toBeVisible();
+e2e	Run e2e tests	2026-11-10T16:37:00.6528436Z          | 		                                                                         ^
+e2e	Run e2e tests	2026-11-10T16:37:00.6528941Z       45 | 	});
+e2e	Run e2e tests	2026-11-10T16:37:00.6529253Z       46 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6529678Z       47 | 	test('creates a folder', async ({ page }) => {
+e2e	Run e2e tests	2026-11-10T16:37:00.6530782Z         at /home/runner/work/directus-7df48e/directus-7df48e/e2e/tests/files/library.spec.ts:44:76
+e2e	Run e2e tests	2026-11-10T16:37:00.6531432Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6532095Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6533387Z     test-results/files-library-File-library-eb246-the-browser-has-no-type-for-chromium-retry2/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T16:37:00.6534763Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6535240Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6535883Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6537092Z     test-results/files-library-File-library-eb246-the-browser-has-no-type-for-chromium-retry2/video.webm
+e2e	Run e2e tests	2026-11-10T16:37:00.6538439Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6538887Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6539703Z     Error Context: test-results/files-library-File-library-eb246-the-browser-has-no-type-for-chromium-retry2/error-context.md
+e2e	Run e2e tests	2026-11-10T16:37:00.6540987Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6541685Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6542934Z     test-results/files-library-File-library-eb246-the-browser-has-no-type-for-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6543824Z     Usage:
+e2e	Run e2e tests	2026-11-10T16:37:00.6544028Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6544930Z         npx playwright show-trace test-results/files-library-File-library-eb246-the-browser-has-no-type-for-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6545865Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6546496Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6546975Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6548057Z   5) [chromium] › tests/settings/data-model.spec.ts:34:2 › Data model › keeps the m2m configuration open when files are chosen as related collection 
+e2e	Run e2e tests	2026-11-10T16:37:00.6548949Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6549549Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+e2e	Run e2e tests	2026-11-10T16:37:00.6550091Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6550635Z     Locator: getByRole('button', { name: 'Files', exact: true })
+e2e	Run e2e tests	2026-11-10T16:37:00.6551199Z     Expected: visible
+e2e	Run e2e tests	2026-11-10T16:37:00.6551547Z     Timeout: 15000ms
+e2e	Run e2e tests	2026-11-10T16:37:00.6551935Z     Error: element(s) not found
+e2e	Run e2e tests	2026-11-10T16:37:00.6552198Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6552543Z     Call log:
+e2e	Run e2e tests	2026-11-10T16:37:00.6553104Z     [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6553984Z     [2m  - waiting for getByRole('button', { name: 'Files', exact: true })[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6554467Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6554476Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6554864Z       46 | 		await page.getByRole('button', { name: 'directus_files' }).click();
+e2e	Run e2e tests	2026-11-10T16:37:00.6555484Z       47 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6556153Z     > 48 | 		await expect(page.getByRole('button', { name: 'Files', exact: true })).toBeVisible();
+e2e	Run e2e tests	2026-11-10T16:37:00.6557035Z          | 		                                                                       ^
+e2e	Run e2e tests	2026-11-10T16:37:00.6558035Z       49 | 		await expect(page.getByRole('textbox', { name: 'A unique column name...' })).toHaveValue('attachments');
+e2e	Run e2e tests	2026-11-10T16:37:00.6558848Z       50 | 	});
+e2e	Run e2e tests	2026-11-10T16:37:00.6559156Z       51 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6559897Z         at /home/runner/work/directus-7df48e/directus-7df48e/e2e/tests/settings/data-model.spec.ts:48:74
+e2e	Run e2e tests	2026-11-10T16:37:00.6560769Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6561450Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6562703Z     test-results/settings-data-model-Data-m-1b6b9-hosen-as-related-collection-chromium/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T16:37:00.6564052Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6564500Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6565122Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6566282Z     test-results/settings-data-model-Data-m-1b6b9-hosen-as-related-collection-chromium/video.webm
+e2e	Run e2e tests	2026-11-10T16:37:00.6567553Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6568008Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6568795Z     Error Context: test-results/settings-data-model-Data-m-1b6b9-hosen-as-related-collection-chromium/error-context.md
+e2e	Run e2e tests	2026-11-10T16:37:00.6569654Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6570500Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6571747Z     test-results/settings-data-model-Data-m-1b6b9-hosen-as-related-collection-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6572600Z     Usage:
+e2e	Run e2e tests	2026-11-10T16:37:00.6572774Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6573594Z         npx playwright show-trace test-results/settings-data-model-Data-m-1b6b9-hosen-as-related-collection-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6574472Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6575360Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6575828Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6576426Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6576905Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6577484Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+e2e	Run e2e tests	2026-11-10T16:37:00.6578231Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6578556Z     Locator: getByRole('button', { name: 'Files', exact: true })
+e2e	Run e2e tests	2026-11-10T16:37:00.6579105Z     Expected: visible
+e2e	Run e2e tests	2026-11-10T16:37:00.6579436Z     Timeout: 15000ms
+e2e	Run e2e tests	2026-11-10T16:37:00.6579813Z     Error: element(s) not found
+e2e	Run e2e tests	2026-11-10T16:37:00.6580060Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6580182Z     Call log:
+e2e	Run e2e tests	2026-11-10T16:37:00.6580952Z     [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6581832Z     [2m  - waiting for getByRole('button', { name: 'Files', exact: true })[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6582320Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6582353Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6582752Z       46 | 		await page.getByRole('button', { name: 'directus_files' }).click();
+e2e	Run e2e tests	2026-11-10T16:37:00.6583360Z       47 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6584033Z     > 48 | 		await expect(page.getByRole('button', { name: 'Files', exact: true })).toBeVisible();
+e2e	Run e2e tests	2026-11-10T16:37:00.6584887Z          | 		                                                                       ^
+e2e	Run e2e tests	2026-11-10T16:37:00.6585881Z       49 | 		await expect(page.getByRole('textbox', { name: 'A unique column name...' })).toHaveValue('attachments');
+e2e	Run e2e tests	2026-11-10T16:37:00.6586659Z       50 | 	});
+e2e	Run e2e tests	2026-11-10T16:37:00.6586960Z       51 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6587713Z         at /home/runner/work/directus-7df48e/directus-7df48e/e2e/tests/settings/data-model.spec.ts:48:74
+e2e	Run e2e tests	2026-11-10T16:37:00.6588373Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6589054Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6590550Z     test-results/settings-data-model-Data-m-1b6b9-hosen-as-related-collection-chromium-retry1/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T16:37:00.6591994Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6592458Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6593099Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6594338Z     test-results/settings-data-model-Data-m-1b6b9-hosen-as-related-collection-chromium-retry1/video.webm
+e2e	Run e2e tests	2026-11-10T16:37:00.6595715Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6596182Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6597010Z     Error Context: test-results/settings-data-model-Data-m-1b6b9-hosen-as-related-collection-chromium-retry1/error-context.md
+e2e	Run e2e tests	2026-11-10T16:37:00.6597908Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6598589Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6599850Z     test-results/settings-data-model-Data-m-1b6b9-hosen-as-related-collection-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6601138Z     Usage:
+e2e	Run e2e tests	2026-11-10T16:37:00.6601316Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6602208Z         npx playwright show-trace test-results/settings-data-model-Data-m-1b6b9-hosen-as-related-collection-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6603134Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6603743Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6604403Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6605012Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6605479Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6606057Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+e2e	Run e2e tests	2026-11-10T16:37:00.6606602Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6606923Z     Locator: getByRole('button', { name: 'Files', exact: true })
+e2e	Run e2e tests	2026-11-10T16:37:00.6607474Z     Expected: visible
+e2e	Run e2e tests	2026-11-10T16:37:00.6607823Z     Timeout: 15000ms
+e2e	Run e2e tests	2026-11-10T16:37:00.6608223Z     Error: element(s) not found
+e2e	Run e2e tests	2026-11-10T16:37:00.6608479Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6608597Z     Call log:
+e2e	Run e2e tests	2026-11-10T16:37:00.6609156Z     [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6610123Z     [2m  - waiting for getByRole('button', { name: 'Files', exact: true })[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6610776Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6610788Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6611193Z       46 | 		await page.getByRole('button', { name: 'directus_files' }).click();
+e2e	Run e2e tests	2026-11-10T16:37:00.6611834Z       47 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6612513Z     > 48 | 		await expect(page.getByRole('button', { name: 'Files', exact: true })).toBeVisible();
+e2e	Run e2e tests	2026-11-10T16:37:00.6613401Z          | 		                                                                       ^
+e2e	Run e2e tests	2026-11-10T16:37:00.6614404Z       49 | 		await expect(page.getByRole('textbox', { name: 'A unique column name...' })).toHaveValue('attachments');
+e2e	Run e2e tests	2026-11-10T16:37:00.6615194Z       50 | 	});
+e2e	Run e2e tests	2026-11-10T16:37:00.6615498Z       51 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6616254Z         at /home/runner/work/directus-7df48e/directus-7df48e/e2e/tests/settings/data-model.spec.ts:48:74
+e2e	Run e2e tests	2026-11-10T16:37:00.6616908Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6617597Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6618905Z     test-results/settings-data-model-Data-m-1b6b9-hosen-as-related-collection-chromium-retry2/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T16:37:00.6620468Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6620968Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6621617Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6622858Z     test-results/settings-data-model-Data-m-1b6b9-hosen-as-related-collection-chromium-retry2/video.webm
+e2e	Run e2e tests	2026-11-10T16:37:00.6624238Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6624689Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6625559Z     Error Context: test-results/settings-data-model-Data-m-1b6b9-hosen-as-related-collection-chromium-retry2/error-context.md
+e2e	Run e2e tests	2026-11-10T16:37:00.6626672Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6627341Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6644388Z     test-results/settings-data-model-Data-m-1b6b9-hosen-as-related-collection-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6645639Z     Usage:
+e2e	Run e2e tests	2026-11-10T16:37:00.6645827Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6646763Z         npx playwright show-trace test-results/settings-data-model-Data-m-1b6b9-hosen-as-related-collection-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6647736Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6648421Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6648913Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6649794Z   6) [chromium] › tests/settings/data-model.spec.ts:52:2 › Data model › lists the sub-fields of a repeater created through the API 
+e2e	Run e2e tests	2026-11-10T16:37:00.6650819Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6651424Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+e2e	Run e2e tests	2026-11-10T16:37:00.6651976Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6652378Z     Locator: getByRole('button', { name: /label — input/ })
+e2e	Run e2e tests	2026-11-10T16:37:00.6652923Z     Expected: visible
+e2e	Run e2e tests	2026-11-10T16:37:00.6653279Z     Timeout: 15000ms
+e2e	Run e2e tests	2026-11-10T16:37:00.6653667Z     Error: element(s) not found
+e2e	Run e2e tests	2026-11-10T16:37:00.6653929Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6654074Z     Call log:
+e2e	Run e2e tests	2026-11-10T16:37:00.6654620Z     [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6655451Z     [2m  - waiting for getByRole('button', { name: /label — input/ })[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6655918Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6655928Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6656375Z       72 | 		await page.getByRole('button', { name: 'Interface', exact: true }).click();
+e2e	Run e2e tests	2026-11-10T16:37:00.6657012Z       73 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6657771Z     > 74 | 		await expect(page.getByRole('button', { name: /label — input/ })).toBeVisible();
+e2e	Run e2e tests	2026-11-10T16:37:00.6658580Z          | 		                                                                  ^
+e2e	Run e2e tests	2026-11-10T16:37:00.6659482Z       75 | 		await expect(page.getByRole('button', { name: /url — input/ })).toBeVisible();
+e2e	Run e2e tests	2026-11-10T16:37:00.6660112Z       76 | 	});
+e2e	Run e2e tests	2026-11-10T16:37:00.6661123Z       77 | });
+e2e	Run e2e tests	2026-11-10T16:37:00.6661893Z         at /home/runner/work/directus-7df48e/directus-7df48e/e2e/tests/settings/data-model.spec.ts:74:69
+e2e	Run e2e tests	2026-11-10T16:37:00.6662554Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6663270Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6664536Z     test-results/settings-data-model-Data-m-d1345-ter-created-through-the-API-chromium/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T16:37:00.6665846Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6666309Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6666948Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6668317Z     test-results/settings-data-model-Data-m-d1345-ter-created-through-the-API-chromium/video.webm
+e2e	Run e2e tests	2026-11-10T16:37:00.6669572Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6670033Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6671031Z     Error Context: test-results/settings-data-model-Data-m-d1345-ter-created-through-the-API-chromium/error-context.md
+e2e	Run e2e tests	2026-11-10T16:37:00.6672081Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6672758Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6673963Z     test-results/settings-data-model-Data-m-d1345-ter-created-through-the-API-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6674769Z     Usage:
+e2e	Run e2e tests	2026-11-10T16:37:00.6674944Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6675735Z         npx playwright show-trace test-results/settings-data-model-Data-m-d1345-ter-created-through-the-API-chromium/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6676604Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6677226Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6677595Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6677971Z     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6678287Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6678646Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+e2e	Run e2e tests	2026-11-10T16:37:00.6678991Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6679246Z     Locator: getByRole('button', { name: /label — input/ })
+e2e	Run e2e tests	2026-11-10T16:37:00.6679594Z     Expected: visible
+e2e	Run e2e tests	2026-11-10T16:37:00.6679815Z     Timeout: 15000ms
+e2e	Run e2e tests	2026-11-10T16:37:00.6680064Z     Error: element(s) not found
+e2e	Run e2e tests	2026-11-10T16:37:00.6680228Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6680673Z     Call log:
+e2e	Run e2e tests	2026-11-10T16:37:00.6681290Z     [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6681847Z     [2m  - waiting for getByRole('button', { name: /label — input/ })[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6682149Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6682156Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6682446Z       72 | 		await page.getByRole('button', { name: 'Interface', exact: true }).click();
+e2e	Run e2e tests	2026-11-10T16:37:00.6682854Z       73 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6683330Z     > 74 | 		await expect(page.getByRole('button', { name: /label — input/ })).toBeVisible();
+e2e	Run e2e tests	2026-11-10T16:37:00.6683832Z          | 		                                                                  ^
+e2e	Run e2e tests	2026-11-10T16:37:00.6684400Z       75 | 		await expect(page.getByRole('button', { name: /url — input/ })).toBeVisible();
+e2e	Run e2e tests	2026-11-10T16:37:00.6684816Z       76 | 	});
+e2e	Run e2e tests	2026-11-10T16:37:00.6685014Z       77 | });
+e2e	Run e2e tests	2026-11-10T16:37:00.6685489Z         at /home/runner/work/directus-7df48e/directus-7df48e/e2e/tests/settings/data-model.spec.ts:74:69
+e2e	Run e2e tests	2026-11-10T16:37:00.6685888Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6686282Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6687086Z     test-results/settings-data-model-Data-m-d1345-ter-created-through-the-API-chromium-retry1/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T16:37:00.6688123Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6688413Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6688785Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6689509Z     test-results/settings-data-model-Data-m-d1345-ter-created-through-the-API-chromium-retry1/video.webm
+e2e	Run e2e tests	2026-11-10T16:37:00.6690636Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6690957Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6691478Z     Error Context: test-results/settings-data-model-Data-m-d1345-ter-created-through-the-API-chromium-retry1/error-context.md
+e2e	Run e2e tests	2026-11-10T16:37:00.6692018Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6692419Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6693169Z     test-results/settings-data-model-Data-m-d1345-ter-created-through-the-API-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6693714Z     Usage:
+e2e	Run e2e tests	2026-11-10T16:37:00.6693824Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6694342Z         npx playwright show-trace test-results/settings-data-model-Data-m-d1345-ter-created-through-the-API-chromium-retry1/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6694896Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6695236Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6695518Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6696029Z     Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6696320Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6696677Z     Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+e2e	Run e2e tests	2026-11-10T16:37:00.6697011Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6697240Z     Locator: getByRole('button', { name: /label — input/ })
+e2e	Run e2e tests	2026-11-10T16:37:00.6697565Z     Expected: visible
+e2e	Run e2e tests	2026-11-10T16:37:00.6697785Z     Timeout: 15000ms
+e2e	Run e2e tests	2026-11-10T16:37:00.6698037Z     Error: element(s) not found
+e2e	Run e2e tests	2026-11-10T16:37:00.6698190Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6698289Z     Call log:
+e2e	Run e2e tests	2026-11-10T16:37:00.6698618Z     [2m  - Expect "toBeVisible" with timeout 15000ms[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6699112Z     [2m  - waiting for getByRole('button', { name: /label — input/ })[22m
+e2e	Run e2e tests	2026-11-10T16:37:00.6699392Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6699399Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6699665Z       72 | 		await page.getByRole('button', { name: 'Interface', exact: true }).click();
+e2e	Run e2e tests	2026-11-10T16:37:00.6700057Z       73 |
+e2e	Run e2e tests	2026-11-10T16:37:00.6700824Z     > 74 | 		await expect(page.getByRole('button', { name: /label — input/ })).toBeVisible();
+e2e	Run e2e tests	2026-11-10T16:37:00.6701342Z          | 		                                                                  ^
+e2e	Run e2e tests	2026-11-10T16:37:00.6701921Z       75 | 		await expect(page.getByRole('button', { name: /url — input/ })).toBeVisible();
+e2e	Run e2e tests	2026-11-10T16:37:00.6702335Z       76 | 	});
+e2e	Run e2e tests	2026-11-10T16:37:00.6702531Z       77 | });
+e2e	Run e2e tests	2026-11-10T16:37:00.6702996Z         at /home/runner/work/directus-7df48e/directus-7df48e/e2e/tests/settings/data-model.spec.ts:74:69
+e2e	Run e2e tests	2026-11-10T16:37:00.6703557Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6703954Z     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6704751Z     test-results/settings-data-model-Data-m-d1345-ter-created-through-the-API-chromium-retry2/test-failed-1.png
+e2e	Run e2e tests	2026-11-10T16:37:00.6705600Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6705897Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6706273Z     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6706995Z     test-results/settings-data-model-Data-m-d1345-ter-created-through-the-API-chromium-retry2/video.webm
+e2e	Run e2e tests	2026-11-10T16:37:00.6707773Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6708047Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6708545Z     Error Context: test-results/settings-data-model-Data-m-d1345-ter-created-through-the-API-chromium-retry2/error-context.md
+e2e	Run e2e tests	2026-11-10T16:37:00.6709088Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6709470Z     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6710249Z     test-results/settings-data-model-Data-m-d1345-ter-created-through-the-API-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6711051Z     Usage:
+e2e	Run e2e tests	2026-11-10T16:37:00.6711169Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6711697Z         npx playwright show-trace test-results/settings-data-model-Data-m-d1345-ter-created-through-the-API-chromium-retry2/trace.zip
+e2e	Run e2e tests	2026-11-10T16:37:00.6712416Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6712791Z     ────────────────────────────────────────────────────────────────────────────────────────────────
+e2e	Run e2e tests	2026-11-10T16:37:00.6713075Z 
+e2e	Run e2e tests	2026-11-10T16:37:00.6713154Z   6 failed
+e2e	Run e2e tests	2026-11-10T16:37:00.6713773Z     [chromium] › tests/content/datetime.spec.ts:21:2 › Datetime interface › shows the weekdays in the language of the user 
+e2e	Run e2e tests	2026-11-10T16:37:00.6714643Z     [chromium] › tests/content/filters.spec.ts:42:2 › Search filters › removes a filter with a long value 
+e2e	Run e2e tests	2026-11-10T16:37:00.6715593Z     [chromium] › tests/content/markdown-editor.spec.ts:25:2 › Markdown editor › highlights the selected view in the Edit / Preview toggle 
+e2e	Run e2e tests	2026-11-10T16:37:00.6716548Z     [chromium] › tests/files/library.spec.ts:41:2 › File library › uploads a dropped file the browser has no type for 
+e2e	Run e2e tests	2026-11-10T16:37:00.6717561Z     [chromium] › tests/settings/data-model.spec.ts:34:2 › Data model › keeps the m2m configuration open when files are chosen as related collection 
+e2e	Run e2e tests	2026-11-10T16:37:00.6718598Z     [chromium] › tests/settings/data-model.spec.ts:52:2 › Data model › lists the sub-fields of a repeater created through the API 
+e2e	Run e2e tests	2026-11-10T16:37:00.6719147Z   19 passed (5.1m)
+e2e	Run e2e tests	2026-11-10T16:37:00.8575463Z ##[error]Process completed with exit code 1.
